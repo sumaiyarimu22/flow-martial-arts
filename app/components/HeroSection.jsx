@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Title from "./Title";
 
 const HeroSection = () => {
   return (
@@ -7,17 +8,15 @@ const HeroSection = () => {
         <div></div>
         <div></div>
         <div className="ps-40 space-y-4 z-[2]">
-          <h1 className=" text-4xl font-medium style-text uppercase">
-            Do you want to be strong
-          </h1>
+          <Title text="Do you want to be strong" />
           <p>Then you to us, We will teach you how to defend yourself</p>
-          <Button placeholder={"view details"} href="/" />
+          <Button placeholder={"View Details"} href="/" />
         </div>
-        <div className="style-text text-9xl font-bold text-light/70 ps-16">
+        <div className="style-text text-7xl lg:text-9xl font-bold text-light/70 ps-16">
           WANT
         </div>
       </div>
-      <div className="flex justify-center mt-16 style-text text-9xl font-bold text-light/70 relative hero-right-line">
+      <div className="flex justify-center mt-16 style-text text-7xl lg:text-9xl font-bold text-light/70 relative hero-right-line">
         STRONG
       </div>
     </div>

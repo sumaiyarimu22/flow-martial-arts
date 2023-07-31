@@ -3,14 +3,14 @@ import { cva } from "class-variance-authority";
 import clsx from "clsx";
 
 const buttonVariants = cva(
-  "flex justify-center border border-white hover:text-accent duration-300",
+  "flex justify-center duration-300 style-text font-medium",
   {
     variants: {
       color: {
-        primary: "text-text",
-        // secondary:
-        //   "text-gray-400 hover:bg-gray-200 hover:text-gray-600  border border-white",
-        // danger: "bg-rose-500 text-white hover:bg-rose-600",
+        primary: "text-text border border-white hover:text-accent",
+
+        danger:
+          "bg-accent text-text hover:bg-black border border-accent duration-300",
       },
       size: {
         default: "py-2 px-4 w-40",

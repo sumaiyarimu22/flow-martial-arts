@@ -29,7 +29,7 @@
   @apply content-[''] absolute top-2/4 mt-20 left-0 w-3/4 h-[1px] bg-light ms-20;
 }
 .hero-left-line::before {
-  @apply content-[''] absolute left-[14rem] top-10 h-2/3 w-[1px] bg-light z-[1];
+  @apply content-[''] absolute left-[14rem] top-16 h-2/3 w-[1px] bg-light z-[1];
 }
 
 .hero-right-line::after {
@@ -37,4 +37,13 @@
 }
 .hero-right-line::before {
   @apply content-[''] absolute bottom-2 right-1/4 h-1/3 w-[2px] bg-light;
+}
+.about-line::after {
+  @apply content-[''] absolute  right-[40%]  h-full w-[2px] bg-light;
+}
+.about-line::before {
+  @apply content-[''] absolute left-2 top-14 w-2/3 h-[2px] bg-light;
+}
+.our-team {
+  @apply rotate-90;
 }
