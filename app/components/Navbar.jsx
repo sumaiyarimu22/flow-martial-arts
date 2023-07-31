@@ -10,7 +10,7 @@ const Navbar = () => {
       data-aos-duration="1000"
       className="h-20 border-b border-light mx-16"
     >
-      <div className="wrapper w-full h-full flex justify-between items-center">
+      <div className="wrapper w-full h-full flex justify-between items-center md:px-12">
         {/* NAV LEFT */}
         <nav>
           <Link href="/" className="text-xl font-semibold link-item">
