@@ -50,3 +50,38 @@ body {
 .our-team:last-child:after {
   @apply rotate-90  style-text text-8xl font-bold content-['TEAM'] absolute -right-2/3 bottom-20 w-full h-40 text-light/60;
 }
+
+/* Custom CSS for gallery */
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 2s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.instagram::after {
+  @apply rotate-90  style-text text-8xl font-bold content-['INSTAGRAM'] absolute -left-[37rem] bottom-40 w-full h-40 text-light/60;
+}
