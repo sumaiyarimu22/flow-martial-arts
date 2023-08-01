@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-black;
+}
 .wrapper {
   @apply container mx-auto px-5 md:px-0;
 }
@@ -44,6 +47,6 @@
 .about-line::before {
   @apply content-[''] absolute left-2 top-14 w-2/3 h-[2px] bg-light;
 }
-.our-team {
-  @apply rotate-90;
+.our-team:last-child:after {
+  @apply rotate-90  style-text text-8xl font-bold content-['TEAM'] absolute -right-2/3 bottom-20 w-full h-40 text-light/60;
 }
