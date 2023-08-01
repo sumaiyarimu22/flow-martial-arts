@@ -4,53 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { BiLogoInstagram } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
-
-const data = [
-  {
-    id: 1,
-
-    image:
-      "https://images.pexels.com/photos/7045430/pexels-photo-7045430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    name: "Valkyria Steelhart",
-    occupation: "JUDO",
-    twiter: "/",
-    instagram: "/",
-    facebook: "/",
-  },
-  {
-    id: 2,
-
-    image:
-      "https://images.pexels.com/photos/10823768/pexels-photo-10823768.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    name: "Seraphina Swiftstrike",
-    occupation: "jiu jitsu",
-    twiter: "/",
-    instagram: "/",
-    facebook: "/",
-  },
-  {
-    id: 3,
-
-    image:
-      "https://images.pexels.com/photos/2628207/pexels-photo-2628207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    name: "Griffin Ironwood",
-    occupation: "BOXING",
-    twiter: "/",
-    instagram: "/",
-    facebook: "/",
-  },
-  {
-    id: 4,
-
-    image:
-      "https://images.pexels.com/photos/7045664/pexels-photo-7045664.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    name: "Arlo Blackthorn",
-    occupation: "MMA",
-    twiter: "/",
-    instagram: "/",
-    facebook: "/",
-  },
-];
+import data from "../../data";
 
 const OurTeam = () => {
   return (
@@ -100,6 +54,7 @@ const OurTeam = () => {
                   <BsFacebook />
                 </Link>
               </div>
+              <Link href={`/instructors/${instructor.id}`}>View Details</Link>
             </div>
           </div>
         ))}

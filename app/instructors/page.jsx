@@ -1,5 +1,6 @@
 import OurTeam from "../components/OurTeam";
-const Instructor = () => {
+
+const Instructors = () => {
   return (
     <div>
       <OurTeam />
@@ -7,4 +8,4 @@ const Instructor = () => {
   );
 };
 
-export default Instructor;
+export default Instructors;
