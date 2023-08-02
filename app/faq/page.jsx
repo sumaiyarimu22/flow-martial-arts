@@ -1,7 +1,12 @@
 import React from "react";
+import Faq from "../components/Faq";
 
 const FaqPage = () => {
-  return <div>FaqPage</div>;
+  return (
+    <div className="min-h-screen">
+      <Faq />
+    </div>
+  );
 };
 
 export default FaqPage;

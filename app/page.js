@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import OurTeam from "./components/OurTeam";
 import GalleryCom from "./components/GalleryCom";
+import Contact from "./components/Contact";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
       <About />
       <OurTeam />
       <GalleryCom />
+      <Contact />
     </div>
   );
 };

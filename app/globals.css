@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f6f2f1;
+  background-color: #3c3c3c;
   height: 10%;
   border-radius: 5px;
 }
@@ -66,9 +66,12 @@ body {
   @apply content-[''] absolute left-2 top-14 w-2/3 h-[2px] bg-light;
 }
 .our-team:last-child:after {
-  @apply rotate-90  style-text text-8xl font-bold content-['TEAM'] absolute -right-2/3 bottom-20 w-full h-40 text-light/60;
+  @apply rotate-90  style-text text-8xl font-bold content-['TEAM'] absolute -right-2/3 bottom-20 w-full h-40 text-light/60 hidden md:block;
 }
 
 .instagram::after {
-  @apply rotate-90  style-text text-8xl font-bold content-['INSTAGRAM'] absolute -left-[37rem] top-1/2 w-full h-40 text-light/60;
+  @apply rotate-90  style-text text-8xl font-bold content-['INSTAGRAM'] absolute -left-[34rem] top-1/2 w-full h-40 text-light/60;
+}
+.inputStyle {
+  @apply bg-transparent border border-gray-300 placeholder:text-gray-400  py-4 px-[1rem] rounded-lg outline-none focus:border-gray-500 duration-500 w-full lg:w-1/2;
 }

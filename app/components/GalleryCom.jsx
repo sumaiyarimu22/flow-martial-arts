@@ -33,7 +33,7 @@ const images = [
 
 const GalleryCom = () => {
   return (
-    <div className="text-text pb-20 ms-16 lg:ms-44 me-16">
+    <div className="text-text pb-6 sm:pb-10 md:pb-20 mx-6 md:mx-16">
       <div className="flex flex-col justify-center text-center instagram relative">
         <div
           className="py-10"
@@ -43,11 +43,11 @@ const GalleryCom = () => {
         >
           <Title text="OUR INSTAGRAM" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:ps-24">
           {images.map((img, i) => (
             <div
               key={i}
-              data-aos="fade-down"
+              data-aos="flip-right"
               data-aos-delay="100"
               data-aos-duration="1000"
             >
@@ -59,7 +59,6 @@ const GalleryCom = () => {
                   height="500"
                   className="w-full h-full object-cover hover:scale-110 duration-500"
                 />
-                <div className="overlay"></div>
               </div>
             </div>
           ))}
