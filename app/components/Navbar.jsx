@@ -25,6 +25,11 @@ const Navbar = () => {
                 Gallery
               </Link>
             </li>
+            <li>
+              <Link href="/instructors" className="link-item">
+                Instructors
+              </Link>
+            </li>
 
             <li>
               <Link href="/about-us" className="link-item">

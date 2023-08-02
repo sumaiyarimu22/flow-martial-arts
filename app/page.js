@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 
 import About from "./components/About";
 import OurTeam from "./components/OurTeam";
+import GalleryCom from "./components/GalleryCom";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       </div>
       <About />
       <OurTeam />
+      <GalleryCom />
     </div>
   );
 };

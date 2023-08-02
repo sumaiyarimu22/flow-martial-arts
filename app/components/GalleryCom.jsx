@@ -15,16 +15,16 @@ const images = [
     src: "https://images.pexels.com/photos/7045486/pexels-photo-7045486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    src: "https://images.pexels.com/photos/7045486/pexels-photo-7045486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://images.pexels.com/photos/5081178/pexels-photo-5081178.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
   {
-    src: "https://images.pexels.com/photos/7045486/pexels-photo-7045486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://images.pexels.com/photos/6005459/pexels-photo-6005459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    src: "https://images.pexels.com/photos/7045486/pexels-photo-7045486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://images.pexels.com/photos/5081175/pexels-photo-5081175.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
   {
-    src: "https://images.pexels.com/photos/7045486/pexels-photo-7045486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://images.pexels.com/photos/8038029/pexels-photo-8038029.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   },
   {
     src: "https://images.pexels.com/photos/7045568/pexels-photo-7045568.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
@@ -33,21 +33,31 @@ const images = [
 
 const GalleryCom = () => {
   return (
-    <div className="text-text section-padding ms-16 lg:ms-44 me-16">
+    <div className="text-text pb-20 ms-16 lg:ms-44 me-16">
       <div className="flex flex-col justify-center text-center instagram relative">
-        <div className="py-10">
+        <div
+          className="py-10"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
           <Title text="OUR INSTAGRAM" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           {images.map((img, i) => (
-            <div key={i}>
-              <div className="gallery-item h-[16rem]">
+            <div
+              key={i}
+              data-aos="fade-down"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div className="gallery-item h-[16rem] overflow-hidden">
                 <Image
                   src={img.src}
                   alt="Image 1"
                   width="500"
                   height="500"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover hover:scale-110 duration-500"
                 />
                 <div className="overlay"></div>
               </div>

@@ -1,5 +1,5 @@
 import GalleryCom from "../components/GalleryCom";
-const Gallery = () => {
+const GalleryPage = () => {
   return (
     <div>
       <GalleryCom />
@@ -7,4 +7,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GalleryPage;

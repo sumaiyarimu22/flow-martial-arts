@@ -1,6 +1,6 @@
 import OurTeam from "../components/OurTeam";
 
-const Instructors = () => {
+const InstructorsPage = () => {
   return (
     <div>
       <OurTeam />
@@ -8,4 +8,4 @@ const Instructors = () => {
   );
 };
 
-export default Instructors;
+export default InstructorsPage;
