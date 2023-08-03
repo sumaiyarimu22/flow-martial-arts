@@ -10,15 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <header
-      data-aos="fade-down"
-      data-aos-delay="100"
-      data-aos-duration="1000"
-      className="h-20 border-b border-light mx-6 md:mx-16"
-    >
+    <header className="h-20 border-b border-light mx-6 md:mx-16 ">
       <div className="wrapper w-full h-full flex justify-between items-center px-4 md:px-12">
         {/* NAV LEFT */}
-        <nav>
+        <nav data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
           <Link
             href="/"
             className="text-2xl font-semibold link-item style-text"
@@ -27,7 +22,12 @@ const Navbar = () => {
           </Link>
         </nav>
         {/* NAV RIGHT */}
-        <nav className="hidden md:block">
+        <nav
+          className="hidden md:block"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
           <ul className="flex gap-5 style-text text-xl">
             <li>
               <Link href="/gallery" className="link-item">
@@ -67,7 +67,7 @@ const Navbar = () => {
         </nav>
         {/* MOBILE MENU */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden absolute top-20 left-0 w-full bg-blue-700 text-text shadow-lg z-[450569068]">
+          <nav className="md:hidden absolute top-20 left-0 w-full bg-black  shadow-lg z-50">
             <ul className="flex flex-col gap-3 py-4 px-8">
               <li>
                 <Link href="/gallery" className="link-item">

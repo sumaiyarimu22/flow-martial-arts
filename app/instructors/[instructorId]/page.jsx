@@ -17,11 +17,14 @@ const InstructorDetails = () => {
   return (
     <div className="text-text section-padding">
       {singleitem.map((item) => (
-        <div key={item.id} className="flex justify-between gap-10 mx-16">
-          <div className="flex flex-col gap-5 justify-center ps-20">
+        <div
+          key={item.id}
+          className="flex flex-col md:flex-row justify-between gap-10 mx-5 sm:mx-16 space-y-5"
+        >
+          <div className="flex flex-col gap-5 justify-center md:ps-20 order-2 md:order-1">
             <div className="text-3xl style-text">{item.name}</div>
             <div className="text-accent/70">{item.occupation} Expart</div>
-            <div className="w-[45vw]">{item.occupationDetails}</div>
+            <div className="md:w-[45vw]">{item.occupationDetails}</div>
 
             <div className="flex gap-3 text-2xl">
               <Link
@@ -44,7 +47,7 @@ const InstructorDetails = () => {
               </Link>
             </div>
           </div>
-          <div className="h-[60vh] w-[40vw]">
+          <div className="h-[60vh] md:w-[40vw] w-full order-1 md:order-2">
             <Image
               src={item.image}
               width="800"

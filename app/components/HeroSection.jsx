@@ -12,7 +12,7 @@ const HeroSection = () => {
       >
         <div></div>
         <div></div>
-        <div className="px-10 md:ps-40 space-y-4 z-[2] pt-12 md:pt-0">
+        <div className="px-10 md:ps-40 space-y-4 z-10 pt-12 md:pt-0">
           <Title text="Do you want to be strong" />
           <p>Then you to us, We will teach you how to defend yourself</p>
           <Button placeholder={"View Details"} href="/" />
