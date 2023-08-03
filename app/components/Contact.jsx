@@ -1,5 +1,5 @@
 "use client";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import { useRef } from "react";
 const ContactPage = () => {
   const formRef = useRef(null);
